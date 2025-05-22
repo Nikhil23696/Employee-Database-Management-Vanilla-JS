@@ -1,0 +1,119 @@
+body{
+    padding: 0 10px;
+}
+:root{
+    --btn: #dbdbdb;
+    --btn-hover: #cacaca;
+    --item-bg: #f0f0f0;
+    --modal-bg: rgba(141,141,141, 0.541)
+}
+.header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center
+}
+.header > button{
+    padding:15px;
+    border:none;
+    background-color:var(--btn);
+    cursor:pointer
+}
+.header > button:hover{
+    background-color:var(--btn-hover)
+}
+.employee{
+    display:flex;
+    justify-content:space-aroun;
+}
+.employee>div{
+    border:1px solid black;
+    overflow-y:scroll;
+    height:450px
+}
+.employee-list{
+    width:30%
+}
+.employee-detail{
+    width:70%
+}
+.employee-list, .employee-detail{
+    display:flex;
+    flex-direction:column;
+    padding:10px;
+   
+}
+.single-employee-name, .single-employee-detail{
+     text-align:center;
+    border-bottom: 1px solid black;
+    margin-bottom:5px
+}
+.employee_name--list{
+    display:flex;
+    flex-direction:column;
+    gap:2vmax;
+    text-align:center;
+    margin-top:1vmax;
+    background-colo: var(--item-bg);
+    margin-bottom:5px;
+    cursor:pointer
+}
+.employees-single-heading{
+    text-align:center;
+    padding:5px;
+    text-transform:uppercase;
+    font-size:25px
+}
+.employees_name--info{
+     display:flex;
+    flex-direction:column;
+    align-items:center
+}
+.selected {
+    background-color: var(--item-bg);
+    font-weight: bold;
+}
+.addEmployee{
+    width:100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+    justify-content:center;
+    align-items:center;
+    background-color: var(--modal-bg);
+    display: none
+}
+.addEmployee-create{
+    width:400px;
+    background-color: white;
+    box-shadow: 0 0 50px grey;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+    display:flex;
+    flex-direction: column;
+    gap:15px
+}
+.addEmployee-create > div{
+    display: grid;
+    grid-template-columns: 48.1% 48.1%;
+    column-gap: 15px
+}
+.addEmployee-create input{
+    padding: 5px 10px;
+    border-radius:5px;
+    border: 1px solid rgb(236,236,236);
+    
+}
+.addEmployee-create input::-webkit-outer-spin-button,
+.addEmployee-create input::-webkit-inner-spin-button {
+    -webkit-appearence: none;
+    margin:0
+}
+.submit{
+    padding: 10px !important;
+    border:none;
+    border-radius: 5px;
+    background-color: var(--btn);
+    cursor: pointer
+}
